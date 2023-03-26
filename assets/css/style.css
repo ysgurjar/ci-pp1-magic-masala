@@ -15,10 +15,12 @@ h4,
 h5,
 h6 {
     font-family: 'Libre Baskerville', georgia, serif;
+    padding: 10px;
 }
 
 p {
     font-family: 'Hind Guntur', arial, sans-serif;
+    padding:10px;
 }
 
 /* header formatting */
@@ -38,12 +40,7 @@ header {
 
 }
 
-h1{
-    letter-spacing: 0.5em;
-    color: #37139b;
-    text-align: center;
-    font-size:xx-large;
-}
+
 
 #website-title{
     letter-spacing: 0.5em;
@@ -100,3 +97,33 @@ nav a {
         height: 100%;
     }
 }
+
+/* horizontal line */
+
+hr {
+    background-color:white;
+    margin:0 0 45px 0;
+    
+    border-width:0;
+  }
+
+.before-about-us-section{
+    height:6px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+/* About us section */
+
+#about-us h1{
+    letter-spacing: 0.5em;
+    color: #37139b;
+    text-align: center;
+    font-size:xx-large;
+}
+
+#about-us-image{
+    float: right;
+    width: 600px;
+}
+
