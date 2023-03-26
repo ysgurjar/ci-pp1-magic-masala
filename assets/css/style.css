@@ -39,11 +39,12 @@ header {
 
 #website-title {
     letter-spacing: 0.5em;
-    text-align: center;
+    
     line-height: 75px;
     font-weight: bolder;
     color: white;
     padding-left: 10px;
+    margin-right: auto;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav li {
 nav a {
     letter-spacing: 0.2em;
     color: white;
-    padding-right: 15px;
+    padding-right: 30px;
     text-decoration: none;
 }
 
