@@ -15,60 +15,22 @@ p{
     font-family: 'Hind Guntur', arial, sans-serif;
 }
 
-
-body{
-    background-color: #fafaf9;
-    margin: 0;
-}
-
 header{
-    height: 150px;
-    width: 100%;
-    padding:0 8px;
-    background: #080008;
-    
+    display: flex;
 }
 
-.logo{
+#logo{
     width: 150px;
     height: 150px;
-    float: left;
 }
 
-/* nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+#website-title{
+    letter-spacing: 0.5em;
+    flex-grow: 1;   /*allows to stretch the element between left-logo and righ-nav */
+    text-align: center;
+    line-height: 75px;
+    }
 
-nav{
-    float: right;
-    padding-top: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fafaf9;
-    padding: 5px 0;
-}
-
-nav a:hover{
-    border-bottom: 1px solid #fafaf9;
-}
-
-#hero-image{
-    height:600px;
-    width: 100%;
-    background: url(../images/hero-video.mp4) no-repeat center center;
-    overflow: hidden;
-    
-}
-
-section{
-    background-color: aqua;
+nav li{
+    display: inline;
 }
