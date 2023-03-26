@@ -17,6 +17,7 @@ p{
 
 header{
     display: flex;
+    align-items: center;
 }
 
 #logo{
@@ -29,8 +30,21 @@ header{
     flex-grow: 1;   /*allows to stretch the element between left-logo and righ-nav */
     text-align: center;
     line-height: 75px;
+    font-weight: bolder;
+    color: wheat;
     }
 
 nav li{
     display: inline;
+}
+
+.hero-video{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }
