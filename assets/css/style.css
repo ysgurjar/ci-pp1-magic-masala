@@ -43,25 +43,26 @@ nav li{
 
 nav a{
     letter-spacing: 0.2em;
-    font-weight:bold;
+    
     color: white;
-    padding-right: 10px;
+    padding-right: 15px;
     text-decoration: none;
 }
-a:link { text-decoration: none; }
-
-
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
 
 .hero-video {
     position: absolute;
-    top:0;
+    right:0;
+    bottom:0;
     z-index: -100;
     min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    
+}
+
+nav{
+    background-color: black;
+    padding: 20px;
+    margin-right: 2px;
 }
