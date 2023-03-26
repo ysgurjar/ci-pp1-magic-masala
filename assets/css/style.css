@@ -38,7 +38,14 @@ header {
 
 }
 
-#website-title {
+h1{
+    letter-spacing: 0.5em;
+    color: #37139b;
+    text-align: center;
+    font-size:xx-large;
+}
+
+#website-title{
     letter-spacing: 0.5em;
     
     line-height: 75px;
