@@ -8,61 +8,86 @@
     border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Libre Baskerville', georgia, serif;
-    }
+}
 
-p{
+p {
     font-family: 'Hind Guntur', arial, sans-serif;
 }
 
 /* header formatting */
 
-header{
+header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #37139b;;
+    
 }
 
-#logo{
+#logo {
     width: 150px;
     height: 150px;
+
 }
 
-#website-title{
+#website-title {
     letter-spacing: 0.5em;
-    flex-grow: 1;   /*allows to stretch the element between left-logo and righ-nav */
     text-align: center;
     line-height: 75px;
     font-weight: bolder;
     color: white;
-    }
+    padding-left: 10px;
+}
 
-nav li{
+nav {
+    padding: 10px;
+    margin-right: 0px;
+    
+}
+
+nav li {
     display: inline;
 }
 
-nav a{
+nav a {
     letter-spacing: 0.2em;
-    
     color: white;
     padding-right: 15px;
     text-decoration: none;
 }
 
+/* hero video */
+
+#hero-video-wrapper{
+    overflow: hidden;
+}
 .hero-video {
-    position: absolute;
-    right:0;
-    bottom:0;
+    
     z-index: -100;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    
 }
 
-nav{
-    background-color: black;
-    padding: 20px;
-    margin-right: 2px;
+@media(min-aspect-ratio: 16/9){
+    .hero-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(max-aspect-ratio: 16/9){
+    .hero-video{
+        width: auto;
+        height: 100%;
+    }
 }
