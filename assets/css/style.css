@@ -167,10 +167,12 @@ hr {
 
 .copyright img{
     vertical-align: middle;
+    background-color: white;
 }
 
 footer p{
     color: white;
     font-weight: bold;
     font-size: 1.2em;
+    letter-spacing: 0.125em;
 }
