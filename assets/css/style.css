@@ -105,6 +105,10 @@ hr {
     margin:0 0 45px 0;
     
     border-width:0;
+
+    height:6px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
   }
 
 .before-about-us-section{
