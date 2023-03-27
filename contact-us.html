@@ -30,25 +30,33 @@
         </nav>
     </header>
 
-    <div class="contact-us">
-        <form action="https://formdump.codeinstitute.net" method="post">
-            <div id="name-wrapper">
-                <label for="name">Name</label>
-                <input type="text" name="username" id="name">
-            </div>
-            <div id="email-wrapper">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div id="phone-number-wrapper">
-                <label for="phone-number">Phone No</label>
-                <input type="number" name="phone-number" id="phone-number">
-            </div>
-            <div id="text-area-wrapper">
-                <label for="free-text">Tell us</label>
-                <textarea name="comments" id="form-text-area" cols="30" rows="10"></textarea>
-            </div>
-        </form>
+    <div class="contact-us-outer">
+        <div class="contact-us-inner">
+            <form action="https://formdump.codeinstitute.net" method="post" class="form">
+                <div id="name-wrapper">
+                    <label for="name">Name</label>
+                    <input type="text" name="username" id="name">
+                </div>
+                <div id="email-wrapper">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div id="phone-number-wrapper">
+                    <label for="phone-number">Phone No</label>
+                    <input type="number" name="phone-number" id="phone-number">
+                </div>
+                <div id="text-area-wrapper">
+                    <label for="free-text">Tell us</label>
+                    <textarea name="comments" id="form-text-area" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+
+            <div id="map" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hjerting%20Strandvej%20128,%20Esbjerg,%20Denmark+(Magic%20Masala%20address)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+
+        </div>
     </div>
     <footer>
         <div id="footer-wrapper">
