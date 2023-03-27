@@ -134,6 +134,7 @@ hr {
 /* contact-us */
 
 .contact-us-image-wrapper{
+    background-color: green;
     background-image: url("../images/pexels-jessica-lewis-creative-606540.jpg");
     height: 30vh;
 }
