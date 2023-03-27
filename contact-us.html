@@ -29,30 +29,26 @@
             </ul>
         </nav>
     </header>
-    <div class="contact-us-image-wrapper">
+
+    <div class="contact-us">
+        <form action="https://formdump.codeinstitute.net" method="post">
+            <div id="name-wrapper">
+                <label for="name">Name</label>
+                <input type="text" name="username" id="name">
+            </div>
+            <div id="email-wrapper">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div id="phone-number-wrapper">
+                <label for="phone-number">Phone No</label>
+                <input type="number" name="phone-number" id="phone-number">
+            </div>
+            <div id="text-area-wrapper">
+                <label for="free-text">Tell us</label>
+                <textarea name="comments" id="form-text-area" cols="30" rows="10"></textarea>
+            </div>
+        </form>
     </div>
-    <form action="https://formdump.codeinstitute.net" method="post">
-
-        <label for="first">First:</label>
-        <br>
-        <textarea name="first" id="first"
-            placeholder="You can see this placeholder, because there isn't anything between the textareas opening and closing tags"
-            rows="10" cols="40"></textarea>
-        <br>
-        <label for="second">Second:</label>
-        <br>
-        <textarea name="second" id="second"
-            placeholder="You can't see this placeholder a first, because a value has been added between the opening and closing tags"
-            rows="10"
-            cols="40">This value is between the opening and closing textarea tags. Try deleting it in the preview to see the placeholder show up.</textarea>
-        <br>
-        <label for="third">Third:</label>
-        <br>
-        <textarea name="third" id="third"
-            placeholder="You can't see this placeholder a first either, because there is a space between the opening and closing textarea tags"
-            rows="10" cols="40"> </textarea>
-    </form>
-
-
 
 </body>
