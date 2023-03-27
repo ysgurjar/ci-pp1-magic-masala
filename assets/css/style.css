@@ -131,3 +131,9 @@ hr {
     width: 600px;
 }
 
+/* contact-us */
+
+.contact-us-image-wrapper{
+    background-image: url("../images/pexels-jessica-lewis-creative-606540.jpg");
+    height: 30vh;
+}
