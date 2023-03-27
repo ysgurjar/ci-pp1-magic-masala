@@ -156,5 +156,10 @@ hr {
 }
 
 .social-media{
+    
+    justify-content: center;
+}
 
+.social-media img{
+    width: 44px;
 }
