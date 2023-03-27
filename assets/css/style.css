@@ -151,15 +151,26 @@ hr {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color:white;
+    align-items: center;
+    background-color:#37139b;
     
 }
 
 .social-media{
-    
+    display: inline;
     justify-content: center;
 }
 
 .social-media img{
     width: 44px;
+}
+
+.copyright img{
+    vertical-align: middle;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
 }
