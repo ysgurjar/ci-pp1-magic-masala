@@ -165,12 +165,23 @@ h2::after{      /*allows to add html elements from css script */
     border: 2px solid rgba(30,85,250,0.4);
 }
 
-input, textarea {           /* to override the default behaviour of non-inheritance */
+input, textarea, button {           /* to override the default behaviour of non-inheritance */
     font-family: inherit;
     font-size: inherit;
  }
 
  textarea{              /* enables vertical scrolling and prevents resizing */
-    overflow-y: scroll;
+    overflow-y:auto;
     resize: none;
+    min-height: 150px;
+ }
+
+ .btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #79B851;
+    cursor: pointer;
+    outline: none;
+    border:none;
  }
