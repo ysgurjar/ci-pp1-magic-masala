@@ -67,3 +67,14 @@ nav #menu{
         margin:auto;                /* centers the div containg logo */
     }
 }
+
+/* ============================================================================
+    Contact-US page elements style
+===============================================================================*/
+
+.container{
+    position: relative; /* to accomodate elements with absolute positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
