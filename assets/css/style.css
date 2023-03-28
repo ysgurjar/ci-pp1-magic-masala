@@ -74,6 +74,10 @@ nav #menu{
     Contact-US page elements style
 ===============================================================================*/
 
+body{
+    width: 100%;    /*use 100% instead of 100vw as it includes scrollbar */
+    height: 100vh;  /* this feature along with height 100% in .container pushes the footer out of viewport-good asthetics */
+}
 .container{
     position: relative; /* to accomodate elements with absolute positioning */
     display: flex;
@@ -86,4 +90,46 @@ nav #menu{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left{
+    height:100%;
+    background-image: url(../images/pexels-surabhi-siddaiah-1051399.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.right{
+    padding:20px 40px;
+
+}
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2::after{      /*allows to add html elements from css script */
+    content:'';
+    position:absolute;
+    left: 50%;  /* this is the position of the entire element , which is different from margin-left */
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #000000;
 }
