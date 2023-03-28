@@ -1,192 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
 
-* {
-
-    margin: 0;
-    padding: 0;
-    border: none;
+/* === override default browser margins === */
+*{
+    margin:0;
+    padding:0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Libre Baskerville', georgia, serif;
-    padding: 10px;
+header{
+    background-color: beige;
 }
 
-p {
-    font-family: 'Hind Guntur', arial, sans-serif;
-    padding:10px;
+/* ============================================================================
+    HEADER ELEMENT STYLE
+===============================================================================*/
+
+.header-outer{                      /* styling parent element to have three flex containers inside it */
+    background-color: beige;
+    display: flex; 
+    flex-wrap: wrap;                /* allows nav menu and heading to flex and arrange vertically for small screen */
+    gap:1em                         /* sets margin between elements */
 }
 
-/* header formatting */
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #37139b;;
-    position:sticky;
-    top:0;
-}
-
-#logo {
-    width: 150px;
-    height: 150px;
-
-}
-
-
-
-#website-title{
-    letter-spacing: 0.5em;
-    
-    line-height: 75px;
-    font-weight: bolder;
-    color: white;
-    padding-left: 10px;
-    margin-right: auto;
-}
-
-nav {
-    padding: 10px;
-    margin-right: 0px;
-    
-}
-
-nav li {
-    display: inline;
-}
-
-nav a {
-    letter-spacing: 0.2em;
-    color: white;
-    padding-right: 30px;
-    text-decoration: none;
-}
-
-/* hero video */
-
-#hero-video-wrapper{
-    overflow: hidden;
-}
-.hero-video {
-    
-    z-index: -100;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-@media(min-aspect-ratio: 16/9){
-    .hero-video{
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-@media(max-aspect-ratio: 16/9){
-    .hero-video{
-        width: auto;
-        height: 100%;
-    }
-}
-
-/* horizontal line */
-
-hr {
-    background-color:white;
-    margin:0 0 45px 0;
-    
-    border-width:0;
-
-    height:6px;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
-  }
-
-.before-about-us-section{
-    height:6px;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
-}
-
-/* About us section */
-
-#about-us h1{
-    letter-spacing: 0.5em;
-    color: #37139b;
-    text-align: center;
-    font-size:xx-large;
-}
-
-#about-us-image{
-    float: right;
-    width: 600px;
-}
-
-/* contact-us */
-
-
-/*footer element */
-
-#footer-wrapper{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color:#37139b;
-    clear: both;
-    
-}
-
-.social-media{
-    display: inline;
-    justify-content: center;
-}
-
-.social-media img{
-    width: 44px;
-}
-
-.copyright img{
-    vertical-align: middle;
-    background-color: white;
-}
-
-footer p{
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    letter-spacing: 0.125em;
-}
-
-/* contact us */
-
-.contact-us-inner{
-    background-image: url("../images/pexels-jessica-lewis-creative-606540.jpg");
-    background-size: cover;
+.logo{                              /* 1of3 flex containder div */
+    background-color: white;            
+    background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction:row;
-    align-items:end;
-    flex-wrap: wrap;
+    background-size: contain;       /* scale the image, preseves aspect ratio */
+    height: 150px;                  /* hard coded value, media query must be written */
+    width: 150px;                   
 }
 
-.form{
-    width: 50%;
-    height: 400px;
-    background-color: orange;
-    margin: 0 auto;
+.website-title{                     /* 2of3 flex container inside div */
+    font-size: clamp(1em,1.5vw,300%); /*responsive design, hard coded min value for small screen,
+                                        relative value for inbetween screen, relative to viewport,
+                                        max value limit for ultra wide screen */
+    flex-grow: 1;
+    margin: auto;                   /*centers the title*/         
+}
+
+.nav-wrapper{                       /* 3of3 flex container inside div */
+    margin:auto;                    /* centers its child element i.e. nav bar horizontally */
+}
+nav #menu{      
+    display: flex;                  /* to arrange it horizontally */
+}
+
+#menu li {
+    letter-spacing: 0.2em;          /* slightly spread out the letters */
+    list-style: none;               /* removes the bullet point marks */
+    padding: 5px;
+}
+
+#menu a{
+    text-decoration: none;          /* removes blue hyperlink look from text decoration */
 }
