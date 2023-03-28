@@ -17,70 +17,37 @@
 
 <body>
     <header>
-        <img id="logo" src="/assets/images/logo.jpg"
-            alt="small square shaped website logo with text 'magic masala' and image of herb">
-        <h1 id="website-title">MAGIC MASALA</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Book a Table</a></li>
-                <li><a href="/contact-us.html" target="_blank">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-outer">
+            <div class="logo">
 
-    <div class="contact-us-outer">
-        <div class="contact-us-inner">
-            <form action="https://formdump.codeinstitute.net" method="post" class="form">
-                <div id="name-wrapper">
-                    <label for="name">Name</label>
-                    <input type="text" name="username" id="name">
-                </div>
-                <div id="email-wrapper">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div id="phone-number-wrapper">
-                    <label for="phone-number">Phone No</label>
-                    <input type="number" name="phone-number" id="phone-number">
-                </div>
-                <div id="text-area-wrapper">
-                    <label for="free-text">Tell us</label>
-                    <textarea name="comments" id="form-text-area" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-
-            <div id="map" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
-                    marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hjerting%20Strandvej%20128,%20Esbjerg,%20Denmark+(Magic%20Masala%20address)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                        href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
-
-        </div>
-    </div>
-    <footer>
-        <div id="footer-wrapper">
-            <div class="social-media"> 
-
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Opens facebook page on a new tab">
-                    <img src="/assets/images/icons8-facebook-240.svg" alt="facebook logo, on click opens in new tab">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="lOpens instagram page on a new tab">
-                    <img src="/assets/images/icons8-instagram.svg" alt="instagram logo, , on click opens in new tab">
-                </a>
-                <a href="https://twitter.com/?lang=en" target="_blank" aria-label="Opens twitter page on a new tab">
-                    <img src="/assets/images/icons8-twitter.svg" alt="twitter logo, on click opens in new tab">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" aria-label="Opens linkedin page on a new tab ">
-                    <img src="/assets/images/icons8-linkedin.svg" alt="instagram logo, on click opens in new tab">
-                </a>
             </div>
-            <div class="copyright">
-                <p>© 2020 Created by Yash Gurjar<a href="https://github.com/ysgurjar"
-                            alt="link to gihub page with usename ysgurjar , opens in new page" target="_blank"><img
-                                src="/assets/images/icons8-github-30.png" alt="github icon link"></a>
-                </p>
+            <div class="website-title">
+                <h1>Magic Masala</h1>
+            </div>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="/contact-us.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-     </footer>
+        <div class="container">
+            <div class="contact-box">
+                <div class="left">
+
+                </div>
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="email" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Your Phone">
+                    <textarea name="message" placeholder="Message" ></textarea>
+                </div>
+            </div>
+        </div>
+
+     </header>
 </body>
