@@ -154,3 +154,8 @@ h2::after{      /*allows to add html elements from css script */
     background-color: #fff;
     border: 2px solid rgba(30,85,250,0.4);
 }
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+ }
