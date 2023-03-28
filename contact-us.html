@@ -44,10 +44,18 @@
             </div>
             <div class="right">
                 <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="email" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Your Phone">
-                <textarea name="message" class="field" placeholder="Message" ></textarea>
+                
+                <label for="name" class="label">Name</label>
+                <input id="name" value="customer-name" type="text" class="field" placeholder="Your Name" required>
+                
+                <label for="email" class="label">Email</label>
+                <input id="email" value="email" type="email" class="field" placeholder="Your Email" required>
+
+                <label for="phone" class="label">Phone</label>
+                <input id="phone" value="phone-no" type="number" class="field" placeholder="Your Phone">
+
+                <label for="message" class="label">Phone</label>
+                <textarea id="message" value="message" name="message" class="field" placeholder="Message" ></textarea>
             </div>
         </div>
     </div>
