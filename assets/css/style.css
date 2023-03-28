@@ -146,6 +146,16 @@ h2::after{      /*allows to add html elements from css script */
     transition: .3s;
 }
 
+.label{
+    width: 100%;
+    padding:0.5rem 1rem;
+    outline:none;
+    border: 2px solid rbga(0,0,0,0);
+    
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
 .field:hover{
     background-color: rbga(0,0,0,0.1);
 }
@@ -155,7 +165,12 @@ h2::after{      /*allows to add html elements from css script */
     border: 2px solid rgba(30,85,250,0.4);
 }
 
-input, textarea {
+input, textarea {           /* to override the default behaviour of non-inheritance */
     font-family: inherit;
     font-size: inherit;
+ }
+
+ textarea{              /* enables vertical scrolling and prevents resizing */
+    overflow-y: scroll;
+    resize: none;
  }
