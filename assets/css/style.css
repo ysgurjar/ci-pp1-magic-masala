@@ -24,7 +24,7 @@ header{
 
 .logo{                              /* 1of3 flex containder div */
     background-color: white;            
-    background-image: url(../images/logo.jpg);
+    background-image: url("../images/logo.jpg");
     background-repeat: no-repeat;
     background-size: contain;       /* scale the image, preseves aspect ratio */
     height: 150px;                  /* hard coded value, media query must be written */
