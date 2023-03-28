@@ -55,3 +55,14 @@ nav #menu{
 #menu a{
     text-decoration: none;          /* removes blue hyperlink look from text decoration */
 }
+
+@media all and (max-width:320px) {  /* testing for practically smallest screen iphone 5s */
+
+    .header-outer{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin:auto;                /* centers the div containg logo */
+    }
+}
