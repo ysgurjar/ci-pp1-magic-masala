@@ -27,6 +27,7 @@ header{
     background-color: white;            
     background-image: url("../images/logo.jpg");
     background-repeat: no-repeat;
+    
     background-size: contain;       /* scale the image, preseves aspect ratio */
     height: 150px;                  /* hard coded value, media query must be written */
     width: 150px;                   
@@ -79,17 +80,15 @@ body{
     height: 100vh;  /* this feature along with height 100% in .container pushes the footer out of viewport-good asthetics */
 }
 .container{
-    position: relative; /* to accomodate elements with absolute positioning */
+    position: relative; /* to accomodate child elements with absolute positioning */
     display: flex;
     justify-content: center;
     align-items: center;
- 
     padding: 20px 100px;
 
     background-image: url(../images/pexels-jessica-lewis-creative-606540.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
     
     width: 100%;
     height: 100%;
@@ -188,4 +187,18 @@ input, textarea, button {           /* to override the default behaviour of non-
 
  .btn:hover{
     background-color: darkgreen;
+ }
+
+ @media screen and (max-width: 880px){
+    .container{
+        padding: 0px 0px;
+    }
+    
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        height:100px;
+    }
  }
