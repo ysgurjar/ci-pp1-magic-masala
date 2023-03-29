@@ -290,6 +290,8 @@ input, textarea, button {           /* to override the default behaviour of non-
 .main, .awards, .restaurant-photos, .testimonials, .coming-soon{
     background-color: rgba(0,0,0,.5);   /*setting bg with 50% opacity */
     color: white;
+    font-weight: bolder;
+    padding: 5px;
 }
 
 /* connecting grid area tags with id class */ 
