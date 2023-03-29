@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 a,  a:visited, a:active {
@@ -25,7 +25,7 @@ a:hover {
 ===============================================================================*/
 
 .header-outer{                      /* styling parent element to have three flex containers inside it */
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0);
     display: flex; 
     flex-wrap: wrap;                /* allows nav menu and heading to flex and arrange vertically for small screen */
     gap:1em                         /* sets margin between elements */
@@ -50,7 +50,9 @@ a:hover {
 }
 
 .nav-wrapper{                       /* 3of3 flex container inside div */
-    margin:auto;                    /* centers its child element i.e. nav bar horizontally */
+    margin:auto;  
+    padding-right: 20px;
+    padding-left: 20px;                  /* centers its child element i.e. nav bar horizontally */
 }
 nav #menu{      
     display: flex;                  /* to arrange it horizontally */
@@ -293,4 +295,57 @@ input, textarea, button {           /* to override the default behaviour of non-
         background-size: cover;
         background-repeat: no-repeat;
     }
+}
+
+/* ============================================================================
+   Menu page style
+===============================================================================*/
+
+.container-main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-areas:
+    "main main main main"
+    "content1 content2 content3 content4";
+    grid-gap: 5px ;
+      
+}
+
+.main{
+    background-color: rgba(0,0,0,.5);
+    grid-area:main;
+}
+
+.content1{
+    background-color: rgba(0,0,0,.5);
+    grid-area:content1;
+}
+
+.content2{
+    background-color: rgba(0,0,0,.5);
+    grid-area:content2;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.content3{
+    background-color: rgba(0,0,0,.5);
+    grid-area:content3;
+}
+
+.content4{
+    background-color: rgba(0,0,0,.5);
+    grid-area: content4;
+}
+
+.slider{
+    position: absolute;
+}
+
+.container-main{
+    position: relative;
+    top:0;
+    left: 0;
 }
