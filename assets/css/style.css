@@ -278,10 +278,10 @@ input, textarea, button {           /* to override the default behaviour of non-
     "main main main main"
     "awards restaurant-photos testimonials coming-soon";
     grid-gap: 5px ;
-    background-image: url(../images/pexels-dahl.jpg);
+    background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;  
+    overflow: hidden;   /* this is important to avoid any weired horizontal scrollbars */
 
     text-align: center;
     margin: auto;
@@ -319,12 +319,12 @@ input, textarea, button {           /* to override the default behaviour of non-
 .slider-awards{
     height: 90%;
     background-color: beige;
-    animation: slide 20s infinite; 
+    animation: slide-awards 20s infinite; 
 }
 
-@keyframes slide {
+@keyframes slide-awards {
     25%{
-        background: url("../images/pexels-dahl.jpg");
+        background: url("../images/pexels-v-dapur-melodi-1109197.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -344,3 +344,5 @@ input, textarea, button {           /* to override the default behaviour of non-
         background-repeat: no-repeat;
     }
 }
+
+
