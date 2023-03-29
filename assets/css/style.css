@@ -265,15 +265,11 @@ input, textarea, button {           /* to override the default behaviour of non-
     }
 }
 
-/* ============================================================================
-   Hero image style
-===============================================================================*/
-
-.slider-hero{
+.slider{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: beige;
-    animation: slide 20s infinite;
+    animation: slider 20s infinite;
 }
 
 @keyframes sliderr {
@@ -310,7 +306,7 @@ input, textarea, button {           /* to override the default behaviour of non-
     grid-template-rows: 1.5fr 0.5fr;
     grid-template-areas:
     "main main main main"
-    "content1 content2 content3 content4";
+    "awards restaurant-photos testimonials coming-soon";
     grid-gap: 5px ;
     background-image: url(../images/pexels-dahl.jpg);
     background-repeat: no-repeat;
@@ -323,32 +319,27 @@ input, textarea, button {           /* to override the default behaviour of non-
     grid-area:main;
 }
 
-.content1{
+.awards{
     background-color: rgba(0,0,0,.5);
-    grid-area:content1;
-}
-
-.content2{
-    background-color: rgba(0,0,0,.5);
-    grid-area:content2;
+    grid-area:awards;
     border-radius: 25px;
+}
+
+.restaurant-photos{
     background-color: rgba(0,0,0,.5);
+    grid-area:restaurant-photos;
+    border-radius: 25px;
 }
 
-.content3{
+.testimonials{
     background-color: rgba(0,0,0,.5);
-    grid-area:content3;
+    grid-area:testimonials;
+    border-radius: 25px;
 }
 
-.content4{
+.coming-soon{
     background-color: rgba(0,0,0,.5);
-    grid-area: content4;
+    grid-area: coming-soon;
+    border-radius: 25px;
 }
 
-
-
-.container-main{
-    position: relative;
-    top:0;
-    left: 0;
-}
