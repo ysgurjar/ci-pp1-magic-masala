@@ -202,3 +202,13 @@ input, textarea, button {           /* to override the default behaviour of non-
         height:100px;
     }
  }
+
+ /* ============================================================================
+    footer element style
+===============================================================================*/
+.footer-outer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
