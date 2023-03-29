@@ -207,8 +207,24 @@ input, textarea, button {           /* to override the default behaviour of non-
     footer element style
 ===============================================================================*/
 .footer-outer{
-    display: flex;
+    display: flex;          /*container for 3 child flex elements */
     flex-direction: row;
     flex-wrap: wrap;
+
+    font-size: clamp(10px,1.05vw,16px); /*responsive text design */
+
+    justify-content: space-between;     /* pushes container left and right */
+    
 }
 
+.social-media li{
+    display: inline-block;  /* to align items horizontally */
+}
+
+.contact-details{
+    flex-grow: 1;   /*to keep the center element reponsive */
+    text-align: center; /* targets the text in the child element and aligns in center */
+}
+.contact-details li{
+    list-style: none;   /*removes bullet points */
+}
