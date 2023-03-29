@@ -113,7 +113,7 @@ body{
 
 .left{
     height:100%;
-    background-image: url(../images/pexels-surabhi-siddaiah-1051399.jpg);
+    background-image: url(../images/pexels-v-shahbaz-ansari-13063312.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -230,6 +230,7 @@ input, textarea, button {           /* to override the default behaviour of non-
 
 .footer-outer div{
     margin:auto;    /*aligns child divs content vertically */
+    text-align: center; /*aligns the text in center for all layout within a div */
 }
 
 .footer-outer li{
@@ -274,14 +275,22 @@ input, textarea, button {           /* to override the default behaviour of non-
 @keyframes slide {
     25%{
         background: url("../images/pexels-dahl.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     50%{
         background: url("../images/pexels-chan-walrus-958546.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     75%{
         background: url("../images/pexels-dana-tentis-262959.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     100%{
         background: url("../images/pexels-marvin-ozz-2474658.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
