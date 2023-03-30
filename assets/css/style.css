@@ -218,6 +218,7 @@ input, textarea, button {           /* to override the default behaviour of non-
 
     .left{
         height:100px;
+        background-color: white; /* nav menu is overlapping, so changing bg */
     }
  }
 
@@ -425,7 +426,6 @@ input, textarea, button {           /* to override the default behaviour of non-
     text-align:right;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: auto;
     max-width: 500px;
    
 }
@@ -435,7 +435,6 @@ input, textarea, button {           /* to override the default behaviour of non-
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: auto;
     max-width: 500px;
 }
 
@@ -446,7 +445,7 @@ input, textarea, button {           /* to override the default behaviour of non-
 
 .grid-container img{
     width: 500px;           /* to prevent it from getting too distorted when viewed on wide screen */
-    height: auto;
+    height: 500px;
 }
 
 .item-name{
@@ -457,20 +456,38 @@ input, textarea, button {           /* to override the default behaviour of non-
 
     .grid-container{
         
-        grid-template-columns: 1fr;
-        align-items: center;
-
+        width: 95vw; /*total width of the grid */
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "food-description-1"
+        "food-image-1"
+        "food-description-2"
+        "food-image-2"
+        "food-description-3"
+        "food-image-3"
+        "food-description-4"
+        "food-image-4"
+        "food-description-5"
+        "food-image-5"
+        "food-description-6"
+        "food-image-6"
+        "food-description-7"
+        "food-image-7";
     }   
     
-    
-    .grid-container img{
-        width: 50vw;           /* to prevent it from getting too distorted when viewed on wide screen */
-        height: auto;
-    }
-    
     .grid-container * {
-        text-align: left;
+        text-align: center;
         margin: auto;
-        vertical-align: auto;
+        vertical-align: auto;      
     }
+
+    .grid-container img{
+        width: 250px;           /* to prevent it from getting too distorted when viewed on wide screen */
+        height: 250px;
+        max-height: 250px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
 }
