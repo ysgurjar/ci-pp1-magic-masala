@@ -386,7 +386,7 @@ em{
     display: grid;
     
     grid-template-columns: 1fr 1fr; /*two columns */
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* seven rows */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* seven rows */
 
     grid-template-areas:    /*alternate left and right side menu */
     "food-description-1 food-image-1"
@@ -398,6 +398,8 @@ em{
     "food-description-7 food-image-7";
 }
 
+/*connecting template with name */
+
 .food-description-1{ grid-area: food-description-1;}
 .food-description-2{ grid-area: food-description-2;}
 .food-description-3{ grid-area: food-description-3;}
@@ -406,16 +408,24 @@ em{
 .food-description-6{ grid-area: food-description-6;}
 .food-description-7{ grid-area: food-description-7;}
 
-.food-image-1{grid-area: food-template-1;}
-.food-image-2{grid-area: food-template-2;}
-.food-image-3{grid-area: food-template-3;}
-.food-image-4{grid-area: food-template-4;}
-.food-image-5{grid-area: food-template-5;}
-.food-image-6{grid-area: food-template-6;}
-.food-image-7{grid-area: food-template-7;}
+.food-image-1{grid-area: food-image-1;}
+.food-image-2{grid-area: food-image-2;}
+.food-image-3{grid-area: food-image-3;}
+.food-image-4{grid-area: food-image-4;}
+.food-image-5{grid-area: food-image-5;}
+.food-image-6{grid-area: food-image-6;}
+.food-image-7{grid-area: food-image-7;}
 
-.grid-container :nth-child(odd){    /*selects menu description */
-    background-color: #79B851;
+.grid-container :nth-child(4n-3){    /*selects menu description on the left */
+    text-align: end;
+    padding: 5px;
+    margin-top: auto;
+}
+
+.grid-container :nth-child(4n-1){    /*selects menu description on the right */
+    
+    padding: 5px;
+    margin-top: auto;
 }
 
 
