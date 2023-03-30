@@ -31,12 +31,8 @@ a:hover {
     gap:1em                         /* sets margin between elements */
 }
 
-.logo{                              /* 1of3 flex containder div */
-    background-color: white;            
-    background-image: url("../images/logo.jpg");
-    background-repeat: no-repeat;
-    
-    background-size: contain;       /* scale the image, preseves aspect ratio */
+img{                              /* 1of3 flex containder div */
+                                   /* scale the image, preseves aspect ratio */
     height: 150px;                  /* hard coded value, media query must be written */
     width: 150px;                   
 }
@@ -76,7 +72,7 @@ nav #menu{
         flex-direction: column;
     }
 
-    .logo{
+    img{
         margin:auto;                /* centers the div containg logo */
         width: 50px;
         height: 50px;
@@ -316,32 +312,32 @@ input, textarea, button {           /* to override the default behaviour of non-
 }
 
 
-/*--Animation for awards --*/
+/*--Animation for restaurant photos --*/
 
-.slider-awards{
+.slider-restaurant-photos{
     height: 90%;
     background-color: beige;
-    animation: slide-awards 20s infinite; 
+    animation: slide-restaurant-photos 20s infinite; 
 }
 
-@keyframes slide-awards {
+@keyframes slide-restaurant-photos {
     25%{
-        background: url("../images/pexels-v-dapur-melodi-1109197.jpg");
+        background: url("../images/restaurant1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
     50%{
-        background: url("../images/pexels-chan-walrus-958546.jpg");
+        background: url("../images/restaurant2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
     75%{
-        background: url("../images/pexels-dana-tentis-262959.jpg");
+        background: url("../images/restaurant3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
     100%{
-        background: url("../images/pexels-marvin-ozz-2474658.jpg");
+        background: url("../images/restaurant4.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
