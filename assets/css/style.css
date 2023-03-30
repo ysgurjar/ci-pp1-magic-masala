@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{
     gap:1em                         /* sets margin between elements */
 }
 
-img{                              /* 1of3 flex containder div */
+#logo{                              /* 1of3 flex containder div */
                                    /* scale the image, preseves aspect ratio */
     height: 150px;                  /* hard coded value, media query must be written */
     width: 150px;                   
@@ -82,7 +82,7 @@ nav #menu{
         flex-direction: column;
     }
 
-    img{
+    #logo{
         margin:auto;                /* centers the div containg logo */
         width: 50px;
         height: 50px;
@@ -396,6 +396,8 @@ em{
     "food-description-5 food-image-5"
     "food-image-6 food-description-6"
     "food-description-7 food-image-7";
+    
+    height: max-content;
 }
 
 /*connecting template with name */
@@ -431,4 +433,9 @@ em{
 
 .grid-container :nth-child(even){ /*selects the image*/
     background-color: #515bb8;
+}
+
+@media all and (max-width:600px) {
+
+    
 }
