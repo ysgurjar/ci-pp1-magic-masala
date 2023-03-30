@@ -20,6 +20,16 @@ a,  a:visited, a:active {
 a:hover {
     border-bottom: 1px solid black;
 }
+
+body{
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Libre Baskerville', serif;
+}
+
+
 /* ============================================================================
     HEADER ELEMENT STYLE
 ===============================================================================*/
@@ -223,7 +233,7 @@ input, textarea, button {           /* to override the default behaviour of non-
     
     padding:10px;
 
-    background-color: beige;
+    background-color:white;
 
 }
 
@@ -309,6 +319,31 @@ input, textarea, button {           /* to override the default behaviour of non-
 
 .coming-soon {
     grid-area: coming-soon;
+}
+
+/* About us section */
+
+.about-us-heading{
+    float:right;
+    width: 40vw;
+    height: auto;
+    background-color: #725007;
+    position: absolute;
+    right: 0px;
+    vertical-align: middle;
+}
+
+.about-us-heading h1{
+    font-size: clamp(20px,1.5vw,30px);
+}
+
+#tagline{
+    vertical-align: middle;
+}
+
+em{
+    font-size: 10vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
