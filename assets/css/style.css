@@ -2,30 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
 
 /* === override default browser margins === */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box; /*tell broswer to account for any border and padding in specified element's width */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*tell broswer to account for any border and padding in specified element's width */
 }
 
-header{
+header {
     background-color: rgba(0, 0, 0, 0);
 }
 
-a,  a:visited, a:active {
+a,
+a:visited,
+a:active {
     color: inherit;
     text-decoration: none;
-   }
+}
 
 a:hover {
     border-bottom: 1px solid black;
 }
 
-body{
+body {
     font-family: 'Hind Guntur', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -34,56 +42,73 @@ h1,h2,h3,h4,h5,h6{
     HEADER ELEMENT STYLE
 ===============================================================================*/
 
-.header-outer{                      /* styling parent element to have three flex containers inside it */
+.header-outer {
+    /* styling parent element to have three flex containers inside it */
     background-color: rgba(0, 0, 0, 0);
-    display: flex; 
-    flex-wrap: wrap;                /* allows nav menu and heading to flex and arrange vertically for small screen */
-    gap:1em                         /* sets margin between elements */
+    display: flex;
+    flex-wrap: wrap;
+    /* allows nav menu and heading to flex and arrange vertically for small screen */
+    gap: 1em
+        /* sets margin between elements */
 }
 
-#logo{                              /* 1of3 flex containder div */
-                                   /* scale the image, preseves aspect ratio */
-    height: 150px;                  /* hard coded value, media query must be written */
-    width: 150px;                   
+#logo {
+    /* 1of3 flex containder div */
+    /* scale the image, preseves aspect ratio */
+    height: 150px;
+    /* hard coded value, media query must be written */
+    width: 150px;
 }
 
-.website-title{                     /* 2of3 flex container inside div */
-    font-size: clamp(1em,1.5vw,300%); /*responsive design, hard coded min value for small screen,
+.website-title {
+    /* 2of3 flex container inside div */
+    font-size: clamp(1em, 1.5vw, 300%);
+    /*responsive design, hard coded min value for small screen,
                                         relative value for inbetween screen, relative to viewport,
                                         max value limit for ultra wide screen */
     flex-grow: 1;
-    margin: auto;                   /*centers the title*/
-    color: #725007;         
+    margin: auto;
+    /*centers the title*/
+    color: #725007;
 }
 
-.nav-wrapper{                       /* 3of3 flex container inside div */
-    margin:auto;  
+.nav-wrapper {
+    /* 3of3 flex container inside div */
+    margin: auto;
     padding-right: 20px;
-    padding-left: 20px;                  /* centers its child element i.e. nav bar horizontally */
+    padding-left: 20px;
+    /* centers its child element i.e. nav bar horizontally */
 }
-nav #menu{      
-    display: flex;                  /* to arrange it horizontally */
+
+nav #menu {
+    display: flex;
+    /* to arrange it horizontally */
     color: #725007;
 }
 
 #menu li {
-    letter-spacing: 0.2em;          /* slightly spread out the letters */
-    list-style: none;               /* removes the bullet point marks */
+    letter-spacing: 0.2em;
+    /* slightly spread out the letters */
+    list-style: none;
+    /* removes the bullet point marks */
     padding: 5px;
 }
 
-#menu a{
-    text-decoration: none;          /* removes blue hyperlink look from text decoration */
+#menu a {
+    text-decoration: none;
+    /* removes blue hyperlink look from text decoration */
 }
 
-@media all and (max-width:320px) {  /* testing for practically smallest screen iphone 5s */
+@media all and (max-width:320px) {
+    /* testing for practically smallest screen iphone 5s */
 
-    .header-outer{
+    .header-outer {
         flex-direction: column;
     }
 
-    #logo{
-        margin:auto;                /* centers the div containg logo */
+    #logo {
+        margin: auto;
+        /* centers the div containg logo */
         width: 50px;
         height: 50px;
     }
@@ -93,12 +118,16 @@ nav #menu{
     Contact-US page elements style
 ===============================================================================*/
 
-body{
-    width: 100%;    /*use 100% instead of 100vw as it includes scrollbar */
-    height: 100vh;  /* this feature along with height 100% in .container pushes the footer out of viewport-good asthetics */
+body {
+    width: 100%;
+    /*use 100% instead of 100vw as it includes scrollbar */
+    height: 100vh;
+    /* this feature along with height 100% in .container pushes the footer out of viewport-good asthetics */
 }
-.container{
-    position: relative; /* to accomodate child elements with absolute positioning */
+
+.container {
+    position: relative;
+    /* to accomodate child elements with absolute positioning */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,43 +136,45 @@ body{
     background-image: url(../images/pexels-jessica-lewis-creative-606540.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     width: 100%;
     height: 100%;
 }
 
-.contact-box{
+.contact-box {
     max-width: 850px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.left{
-    height:100%;
+.left {
+    height: 100%;
     background-image: url(../images/pexels-v-shahbaz-ansari-13063312.jpg);
     background-size: cover;
     overflow: hidden;
 }
 
-.right{
-    padding:20px 40px;
+.right {
+    padding: 20px 40px;
     background-color: beige;
 
 }
 
-h2{
+h2 {
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-.right h2::after{      /*allows to add html elements from css script */
-    content:'';
-    position:absolute;
-    left: 50%;  /* this is the position of the entire element , which is different from margin-left */
+.right h2::after {
+    /*allows to add html elements from css script */
+    content: '';
+    position: absolute;
+    left: 50%;
+    /* this is the position of the entire element , which is different from margin-left */
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
@@ -152,138 +183,152 @@ h2{
     background-color: #000000;
 }
 
-.field{
+.field {
     width: 100%;
-    padding:0.5rem 1rem;
-    outline:none;
-    border: 2px solid rbga(0,0,0,0);
-    background-color: rgba(230,230,230,0.6);
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rbga(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
 }
 
-.label{
+.label {
     width: 100%;
-    padding:0.5rem 1rem;
-    outline:none;
-    border: 2px solid rbga(0,0,0,0);
-    
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rbga(0, 0, 0, 0);
+
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
 }
-.field:hover{
-    background-color: rbga(0,0,0,0.1);
+
+.field:hover {
+    background-color: rbga(0, 0, 0, 0.1);
 }
 
-.field:focus{
+.field:focus {
     background-color: #fff;
-    border: 2px solid rgba(30,85,250,0.4);
+    border: 2px solid rgba(30, 85, 250, 0.4);
 }
 
-input, textarea, button {           /* to override the default behaviour of non-inheritance */
+input,
+textarea,
+button {
+    /* to override the default behaviour of non-inheritance */
     font-family: inherit;
     font-size: inherit;
- }
+}
 
- textarea{              /* enables vertical scrolling and prevents resizing */
-    overflow-y:auto;
+textarea {
+    /* enables vertical scrolling and prevents resizing */
+    overflow-y: auto;
     resize: none;
     min-height: 150px;
- }
+}
 
- .btn{
+.btn {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     background-color: #79B851;
     cursor: pointer;
     outline: none;
-    border:none;
- }
+    border: none;
+}
 
- .btn:hover{
+.btn:hover {
     background-color: darkgreen;
- }
+}
 
- @media screen and (max-width: 880px){
-    .container{
+@media screen and (max-width: 880px) {
+    .container {
         padding: 0px 0px;
         display: block;
     }
-    
-    .contact-box{
+
+    .contact-box {
         grid-template-columns: 1fr;
     }
 
-    .left{
-        height:100px;
-        background-color: white; /* nav menu is overlapping, so changing bg */
+    .left {
+        height: 100px;
+        background-color: white;
+        /* nav menu is overlapping, so changing bg */
     }
- }
+}
 
- .googlemap {
+.googlemap {
     position: relative;
-    padding-bottom: 75%; /* 4:3 ratio*/
+    padding-bottom: 75%;
+    /* 4:3 ratio*/
     height: 0;
     overflow: hidden;
 }
 
 .googlemap iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100% !important;
-height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
- /* ============================================================================
+/* ============================================================================
     footer element style
 ===============================================================================*/
-.footer-outer{
-    display: flex;          /*container for 3 child flex elements */
+.footer-outer {
+    display: flex;
+    /*container for 3 child flex elements */
     flex-direction: row;
     flex-wrap: wrap;
 
-    font-size: clamp(12px,1.05vw,16px); /*responsive text design */  
-    
-    padding:10px;
+    font-size: clamp(12px, 1.05vw, 16px);
+    /*responsive text design */
 
-    background-color:white;
+    padding: 10px;
+
+    background-color: white;
 
 }
 
 
-.footer-outer div{
-    margin:auto;    /*aligns child divs content vertically */
-    text-align: center; /*aligns the text in center for all layout within a div */
+.footer-outer div {
+    margin: auto;
+    /*aligns child divs content vertically */
+    text-align: center;
+    /*aligns the text in center for all layout within a div */
 }
 
-.footer-outer li{
-    list-style: none;   /*removes bullet points */
+.footer-outer li {
+    list-style: none;
+    /*removes bullet points */
     text-decoration: none;
     color: inherit;
 }
 
-.social-media ul{
+.social-media ul {
     display: flex;
     min-width: 180px;
-    font-size: clamp(20px,1.05vw,16px);
+    font-size: clamp(20px, 1.05vw, 16px);
     justify-content: space-between;
 }
 
-.contact-details{
-    flex-grow: 1;   /*to keep the center element reponsive */
-    text-align: center; /* targets the text in the child element and aligns in center */
+.contact-details {
+    flex-grow: 1;
+    /*to keep the center element reponsive */
+    text-align: center;
+    /* targets the text in the child element and aligns in center */
 }
 
-@media  screen and (max-width:600px) {
-    .footer-outer{
+@media screen and (max-width:600px) {
+    .footer-outer {
         flex-direction: column;
     }
 
-    .footer-outer div{
+    .footer-outer div {
         padding-top: 10px;
     }
 }
@@ -292,37 +337,44 @@ height: 100% !important;
    Index page style
 ===============================================================================*/
 
-.container-main{
+.container-main {
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr;
     grid-template-areas:
-    "main-index main-index main-index main-index"
-    "awards restaurant-photos testimonials coming-soon";
-    grid-gap: 5px ;
+        "main-index main-index main-index main-index"
+        "awards restaurant-photos testimonials coming-soon";
+    grid-gap: 5px;
     background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;   /* this is important to avoid any weired horizontal scrollbars */
+    overflow: hidden;
+    /* this is important to avoid any weired horizontal scrollbars */
 
     text-align: center;
     margin: auto;
 }
 
-.main-index-page, .awards, .restaurant-photos, .testimonials, .coming-soon{
-    background-color: rgba(0,0,0,.5);   /*setting bg with 50% opacity */
+.main-index-page,
+.awards,
+.restaurant-photos,
+.testimonials,
+.coming-soon {
+    background-color: rgba(0, 0, 0, .5);
+    /*setting bg with 50% opacity */
     color: white;
     font-weight: bolder;
     padding: 5px;
     text-overflow: ellipsis;
 }
 
-/* connecting grid area tags with id class */ 
-.main-index-page{
-    grid-area:main-index;
+/* connecting grid area tags with id class */
+.main-index-page {
+    grid-area: main-index;
     display: flex;
-    flex-direction:column;       /*defining flex containers to arrange two display within */
+    flex-direction: column;
+    /*defining flex containers to arrange two display within */
     justify-content: space-around;
 }
 
@@ -343,7 +395,7 @@ height: 100% !important;
     grid-area: coming-soon;
 }
 
-.what-we-do{
+.what-we-do {
     max-width: 500px;
     align-self: flex-end;
     background-color: #725007;
@@ -351,33 +403,34 @@ height: 100% !important;
     font-weight: 100;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
 
-    .container-main{
-        display:block;
+    .container-main {
+        display: block;
         height: auto;
-        grid-template-columns: minmax(0,1fr);
+        grid-template-columns: minmax(0, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        "main-index" 
-        "awards"
-        "restaurant-photos"
-        "testimonials"
-        "coming-soon";
+            "main-index"
+            "awards"
+            "restaurant-photos"
+            "testimonials"
+            "coming-soon";
 
-        grid-gap: 5px ;
+        grid-gap: 5px;
         background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        overflow: hidden;   /* this is important to avoid any weired horizontal scrollbars */
-    
+        overflow: hidden;
+        /* this is important to avoid any weired horizontal scrollbars */
+
         text-align: center;
         margin: auto;
-     
+
 
     }
 
-    .what-we-do{
+    .what-we-do {
         align-self: center;
     }
 }
@@ -385,44 +438,50 @@ height: 100% !important;
 /*--Animation  photos --*/
 
 /*Seting up background and size */
-.slider-restaurant-photos, .slider-awards, .slider-testimonials , .slider-coming-soon{
+.slider-restaurant-photos,
+.slider-awards,
+.slider-testimonials,
+.slider-coming-soon {
     height: 100%;
     min-height: 500px;
     width: 100%;
     background-color: beige;
-    
+
     justify-content: center;
 }
 
 /*  Restaurant photos  */
 
-.slider-restaurant-photos{
-    animation: slide-restaurant-photos 20s infinite; 
+.slider-restaurant-photos {
+    animation: slide-restaurant-photos 20s infinite;
 }
 
 
 @keyframes slide-restaurant-photos {
-    25%{
+    25% {
         background: url("../images/restaurant1.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    50%{
+
+    50% {
         background: url("../images/restaurant2.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    75%{
+
+    75% {
         background: url("../images/restaurant3.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    100%{
+
+    100% {
         background: url("../images/restaurant4.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -431,34 +490,37 @@ height: 100% !important;
 
 /*--Animation for award photos --*/
 
-.slider-awards{
+.slider-awards {
 
-    animation: slide-awards-photos 20s infinite; 
+    animation: slide-awards-photos 20s infinite;
 
 }
 
 @keyframes slide-awards-photos {
-    25%{
+    25% {
         background: url("../images/award1.webp");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    50%{
+
+    50% {
         background: url("../images/award2.jpeg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    75%{
+
+    75% {
         background: url("../images/award3.webp");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    100%{
+
+    100% {
         background: url("../images/award4.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -466,34 +528,37 @@ height: 100% !important;
 
 /*--Animation for testimonials --*/
 
-.slider-testimonials{
+.slider-testimonials {
 
-    animation: slide-testimonials-photos 20s infinite; 
+    animation: slide-testimonials-photos 20s infinite;
 
 }
 
 @keyframes slide-testimonials-photos {
-    25%{
+    25% {
         background: url("../images/Testimonial-1.png");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    50%{
+
+    50% {
         background: url("../images/Testimonial-2.png");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    75%{
+
+    75% {
         background: url("../images/Testimonial-3.png");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    100%{
+
+    100% {
         background: url("../images/Testimonial-4.png");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -501,40 +566,43 @@ height: 100% !important;
 
 /*--Animation for coming soon --*/
 
-.slider-coming-soon{
+.slider-coming-soon {
 
-    animation: slide-coming-soon-photos 20s infinite; 
+    animation: slide-coming-soon-photos 20s infinite;
 
 }
 
 @keyframes slide-coming-soon-photos {
-    25%{
+    25% {
         background: url("../images/coming-soon-1.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    50%{
+
+    50% {
         background: url("../images/coming-soon-2.jpeg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    75%{
+
+    75% {
         background: url("../images/coming-soon-3.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
-    100%{
+
+    100% {
         background: url("../images/coming-soon-4.jpg");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 }
 
-.container-main h3{
+.container-main h3 {
     background-color: orange;
     color: #000000;
 }
@@ -542,113 +610,167 @@ height: 100% !important;
 /* ============================================================================
    Menu page style
 ===============================================================================*/
-.menu-main{
+.menu-main {
     display: flex;
-    justify-content: center; /*centers fix dimention grid within webpage */
+    justify-content: center;
+    /*centers fix dimention grid within webpage */
     background-color: beige
-    
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    
-    grid-template-columns: 500px 500px; /*two columns - fix width to avoid distortion on wide screen , mobile first appoach*/
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* seven rows */
 
-    grid-template-areas:    /*alternate left and right side menu */
-    "food-description-1 food-image-1"
-    "food-image-2 food-description-2"
-    "food-description-3 food-image-3"
-    "food-image-4 food-description-4"
-    "food-description-5 food-image-5"
-    "food-image-6 food-description-6"
-    "food-description-7 food-image-7"; 
+    grid-template-columns: 500px 500px;
+    /*two columns - fix width to avoid distortion on wide screen , mobile first appoach*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* seven rows */
+
+    grid-template-areas:
+        /*alternate left and right side menu */
+        "food-description-1 food-image-1"
+        "food-image-2 food-description-2"
+        "food-description-3 food-image-3"
+        "food-image-4 food-description-4"
+        "food-description-5 food-image-5"
+        "food-image-6 food-description-6"
+        "food-description-7 food-image-7";
 }
 
 /*connecting template with name */
 
-.food-description-1{ grid-area: food-description-1;}
-.food-description-2{ grid-area: food-description-2;}
-.food-description-3{ grid-area: food-description-3;}
-.food-description-4{ grid-area: food-description-4;}
-.food-description-5{ grid-area: food-description-5;}
-.food-description-6{ grid-area: food-description-6;}
-.food-description-7{ grid-area: food-description-7;}
+.food-description-1 {
+    grid-area: food-description-1;
+}
 
-.food-image-1{grid-area: food-image-1;}
-.food-image-2{grid-area: food-image-2;}
-.food-image-3{grid-area: food-image-3;}
-.food-image-4{grid-area: food-image-4;}
-.food-image-5{grid-area: food-image-5;}
-.food-image-6{grid-area: food-image-6;}
-.food-image-7{grid-area: food-image-7;}
+.food-description-2 {
+    grid-area: food-description-2;
+}
 
-.food-description-1,.food-description-3, .food-description-5, .food-description-7{    /*selects menu description on the left i.e 1,3,5,7 */
-    text-align:right;
+.food-description-3 {
+    grid-area: food-description-3;
+}
+
+.food-description-4 {
+    grid-area: food-description-4;
+}
+
+.food-description-5 {
+    grid-area: food-description-5;
+}
+
+.food-description-6 {
+    grid-area: food-description-6;
+}
+
+.food-description-7 {
+    grid-area: food-description-7;
+}
+
+.food-image-1 {
+    grid-area: food-image-1;
+}
+
+.food-image-2 {
+    grid-area: food-image-2;
+}
+
+.food-image-3 {
+    grid-area: food-image-3;
+}
+
+.food-image-4 {
+    grid-area: food-image-4;
+}
+
+.food-image-5 {
+    grid-area: food-image-5;
+}
+
+.food-image-6 {
+    grid-area: food-image-6;
+}
+
+.food-image-7 {
+    grid-area: food-image-7;
+}
+
+.food-description-1,
+.food-description-3,
+.food-description-5,
+.food-description-7 {
+    /*selects menu description on the left i.e 1,3,5,7 */
+    text-align: right;
     padding-left: 5px;
     padding-right: 5px;
     max-width: 500px;
-   
+
 }
 
-.food-description-2, .food-description-4, .food-description-6{    /*selects menu description on the right i.e. 2,4, 6*/
-    
+.food-description-2,
+.food-description-4,
+.food-description-6 {
+    /*selects menu description on the right i.e. 2,4, 6*/
+
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
     max-width: 500px;
 }
 
-.grid-container :nth-child(4n){ /*selects the image and keeps it aligned to right*/
+.grid-container :nth-child(4n) {
+    /*selects the image and keeps it aligned to right*/
     text-align: right;
 }
 
 
-.grid-container img{
-    width: 500px;           /* to prevent it from getting too distorted when viewed on wide screen */
+.grid-container img {
+    width: 500px;
+    /* to prevent it from getting too distorted when viewed on wide screen */
     height: 500px;
 }
 
-.item-name{
+.item-name {
     color: #725007;
 }
 
 @media screen and (max-width:1000px) {
 
-    .grid-container{
-        
-        width: 95vw; /*total width of the grid */
+    .grid-container {
+
+        width: 95vw;
+        /*total width of the grid */
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        "food-description-1"
-        "food-image-1"
-        "food-description-2"
-        "food-image-2"
-        "food-description-3"
-        "food-image-3"
-        "food-description-4"
-        "food-image-4"
-        "food-description-5"
-        "food-image-5"
-        "food-description-6"
-        "food-image-6"
-        "food-description-7"
-        "food-image-7";
-    }   
-    
+            "food-description-1"
+            "food-image-1"
+            "food-description-2"
+            "food-image-2"
+            "food-description-3"
+            "food-image-3"
+            "food-description-4"
+            "food-image-4"
+            "food-description-5"
+            "food-image-5"
+            "food-description-6"
+            "food-image-6"
+            "food-description-7"
+            "food-image-7";
+    }
+
     .grid-container * {
         text-align: center;
         margin: auto;
-        vertical-align: auto;      
+        vertical-align: auto;
     }
 
-    .grid-container img{
-        width: 250px;           /* to prevent it from getting too distorted when viewed on wide screen */
+    .grid-container img {
+        width: 250px;
+        /* to prevent it from getting too distorted when viewed on wide screen */
         height: 250px;
         max-height: 250px;
         object-fit: cover;
         overflow: hidden;
     }
-    
+
 }
