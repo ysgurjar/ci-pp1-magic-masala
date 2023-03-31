@@ -529,6 +529,8 @@ input, textarea, button {           /* to override the default behaviour of non-
 .menu-main{
     display: flex;
     justify-content: center; /*centers fix dimention grid within webpage */
+    background-color: beige
+    
 }
 
 .grid-container{
