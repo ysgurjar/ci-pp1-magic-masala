@@ -32,21 +32,20 @@
                     <ul id="menu">
                         <li><a href="index.html" aria-label="link to home page, opens in new tab">Home</a></li>
                         <li><a href="menu.html" aria-label="link to menu page, opens in new tab">Menu</a></li>
-                        <li><a href="contact-us.html"  aria-label="link to contact us page, opens in new tab">Contact Us</a></li>
+                        <li><a href="contact-us.html" aria-label="link to contact us page, opens in new tab">Contact
+                                Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-
     </header>
-
-    </header>
+<main>
     <div class="container">
         <div class="contact-box">
             <div class="left">
 
             </div>
-            <div class="right">
+            <div class="right" aria-label="contains an image on left and a form on right">
                 <form action="https://formdump.codeinstitute.net/" method="POST">
                     <h2>Contact Us</h2>
 
@@ -67,11 +66,21 @@
             </div>
         </div>
     </div>
-    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+
+    <!-- google map code snippet is sourced from : 
+        mantismamita/new_gist_file.css  https://gist.github.com/mantismamita/9aa735f89f04690a56ef-->
+
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=Hjerting+Strandvej+128,+Esbjerg+Municipality,+Denmark&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" frameborder="0"></iframe>
+        </div>
+
+    <!-- <div style="width: 100%" aria-label="map showing the location of the restaurant">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
             marginwidth="0"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hjerting%20Strandvej%20128,%20Esbjerg,%20Denmark+(Masala%20Magic)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                 href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>
-    </div>
+    </div> -->
+</main>
     <footer>
         <div class="footer-outer">
             <div class="social-media">
@@ -104,8 +113,8 @@
                         <p><i class="fa-solid fa-phone"></i><em>Phone: +45 50 50 50 50</em></p>
                     </li>
 
-                    <li></li>
-                    <p><i class="fa-solid fa-envelope"></i> <em>Email : magicm@gmail.com</em></p>
+                    <li>
+                        <p><i class="fa-solid fa-envelope"></i> <em>Email : magicm@gmail.com</em></p>
                     </li>
                 </ul>
             </div>
@@ -113,7 +122,6 @@
                 <h4>Opening Hours:</h4>
                 <p>Monday to Friday: 11:00 - 21:00</p>
                 <p>Weekends: 09:00 - 21:00</p>
-
             </div>
         </div>
     </footer>
@@ -121,4 +129,5 @@
     <!-- Fontawesome src code -->
     <script src="https://kit.fontawesome.com/46135cd422.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
