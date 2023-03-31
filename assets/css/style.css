@@ -140,7 +140,7 @@ h2{
     margin-bottom: 10px;
 }
 
-h2::after{      /*allows to add html elements from css script */
+.right h2::after{      /*allows to add html elements from css script */
     content:'';
     position:absolute;
     left: 50%;  /* this is the position of the entire element , which is different from margin-left */
@@ -278,11 +278,11 @@ input, textarea, button {           /* to override the default behaviour of non-
 
 .container-main{
     display: grid;
-    height: 100vh;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 0.5fr;
     grid-template-areas:
-    "main main main main"
+    "main-index main-index main-index main-index"
     "awards restaurant-photos testimonials coming-soon";
     grid-gap: 5px ;
     background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
@@ -294,17 +294,22 @@ input, textarea, button {           /* to override the default behaviour of non-
     margin: auto;
 }
 
-.main, .awards, .restaurant-photos, .testimonials, .coming-soon{
+.main-index-page, .awards, .restaurant-photos, .testimonials, .coming-soon{
     background-color: rgba(0,0,0,.5);   /*setting bg with 50% opacity */
     color: white;
     font-weight: bolder;
     padding: 5px;
+    text-overflow: ellipsis;
 }
 
 /* connecting grid area tags with id class */ 
-.main{
-    grid-area:main;
+.main-index-page{
+    grid-area:main-index;
+    display: flex;
+    flex-direction:column;       /*defining flex containers to arrange two display within */
+    justify-content: space-around;
 }
+
 
 .awards {
     grid-area: awards;
@@ -322,63 +327,201 @@ input, textarea, button {           /* to override the default behaviour of non-
     grid-area: coming-soon;
 }
 
-/* About us section */
-
-.about-us-heading{
-    float:right;
-    width: 40vw;
-    height: auto;
+.what-we-do{
+    max-width: 500px;
+    align-self: flex-end;
     background-color: #725007;
-    position: absolute;
-    right: 0px;
-    vertical-align: middle;
+    color: white#000000;
+    font-weight: 100;
 }
 
-.about-us-heading h1{
-    font-size: clamp(20px,1.5vw,30px);
+@media screen and (max-width:1000px){
+
+    .container-main{
+        display:block;
+        height: auto;
+        grid-template-columns: minmax(0,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "main-index" 
+        "awards"
+        "restaurant-photos"
+        "testimonials"
+        "coming-soon";
+
+        grid-gap: 5px ;
+        background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;   /* this is important to avoid any weired horizontal scrollbars */
+    
+        text-align: center;
+        margin: auto;
+     
+
+    }
+
+    .what-we-do{
+        align-self: center;
+    }
 }
 
-#tagline{
-    vertical-align: middle;
+/*--Animation  photos --*/
+
+/*Seting up background and size */
+.slider-restaurant-photos, .slider-awards, .slider-testimonials , .slider-coming-soon{
+    height: 100%;
+    min-height: 500px;
+    width: 100%;
+    background-color: beige;
+    
+    justify-content: center;
 }
 
-/* em{
-    font-size: 10vw;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
-
-
-/*--Animation for restaurant photos --*/
+/*  Restaurant photos  */
 
 .slider-restaurant-photos{
-    height: 90%;
-    background-color: beige;
     animation: slide-restaurant-photos 20s infinite; 
 }
+
 
 @keyframes slide-restaurant-photos {
     25%{
         background: url("../images/restaurant1.jpg");
-        background-size: cover;
+        background-size:contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
     50%{
         background: url("../images/restaurant2.jpg");
-        background-size: cover;
+        background-size:contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
     75%{
         background: url("../images/restaurant3.jpg");
-        background-size: cover;
+        background-size:contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
     100%{
         background: url("../images/restaurant4.jpg");
-        background-size: cover;
+        background-size:contain;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
+
+/*--Animation for award photos --*/
+
+.slider-awards{
+
+    animation: slide-awards-photos 20s infinite; 
+
+}
+
+@keyframes slide-awards-photos {
+    25%{
+        background: url("../images/award1.webp");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    50%{
+        background: url("../images/award2.jpeg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    75%{
+        background: url("../images/award3.webp");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100%{
+        background: url("../images/award4.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*--Animation for testimonials --*/
+
+.slider-testimonials{
+
+    animation: slide-testimonials-photos 20s infinite; 
+
+}
+
+@keyframes slide-testimonials-photos {
+    25%{
+        background: url("../images/Testimonial-1.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    50%{
+        background: url("../images/Testimonial-2.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    75%{
+        background: url("../images/Testimonial-3.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100%{
+        background: url("../images/Testimonial-4.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*--Animation for coming soon --*/
+
+.slider-coming-soon{
+
+    animation: slide-coming-soon-photos 20s infinite; 
+
+}
+
+@keyframes slide-coming-soon-photos {
+    25%{
+        background: url("../images/coming-soon-1.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    50%{
+        background: url("../images/coming-soon-2.jpeg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    75%{
+        background: url("../images/coming-soon-3.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100%{
+        background: url("../images/coming-soon-4.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.container-main h3{
+    background-color: orange;
+    color: #000000;
+}
 
 /* ============================================================================
    Menu page style
