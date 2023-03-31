@@ -187,7 +187,6 @@ h2 {
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
-    border: 2px solid rbga(0, 0, 0, 0);
     background-color: rgba(230, 230, 230, 0.6);
     font-size: 1.1rem;
     margin-bottom: 22px;
@@ -198,15 +197,13 @@ h2 {
     width: 100%;
     padding: 0.5rem 1rem;
     outline: none;
-    border: 2px solid rbga(0, 0, 0, 0);
-
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .3s;
 }
 
 .field:hover {
-    background-color: rbga(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .field:focus {
@@ -399,7 +396,7 @@ textarea {
     max-width: 500px;
     align-self: flex-end;
     background-color: #725007;
-    color: white#000000;
+    color: white;
     font-weight: 100;
 }
 
@@ -761,7 +758,6 @@ textarea {
     .grid-container * {
         text-align: center;
         margin: auto;
-        vertical-align: auto;
     }
 
     .grid-container img {
