@@ -38,3 +38,23 @@
 11. [Acknowledgements](#acknowledgements)
 
 <hr>
+
+## Project Goals 
+
+### User Goals
+- Finding a restaurant in Esbjerg serving Indian food.
+- Menu with price in local currency.
+- Location and contact details of restaurant.
+
+### Site Owner Goals
+- Market the restaurant food among local and tourists.
+- Provide contact information to customers and opening hours 
+- Provide a means to customers to contact them.
+
+## User Experience
+
+### Target Audience
+- Locals and tourists looking to dine in Esbjerg
+- People looking to organise events at the resturant
+- Tie up with event organisers for catering
+
