@@ -133,7 +133,7 @@ body {
     align-items: center;
     padding: 20px 100px;
 
-    background-image: url(../images/pexels-jessica-lewis-creative-606540.jpg);
+    background-image: url(../images/contact-us-hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -152,7 +152,7 @@ body {
 
 .left {
     height: 100%;
-    background-image: url(../images/pexels-v-shahbaz-ansari-13063312.jpg);
+    background-image: url(../images/contact-us-pani-puri.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -343,7 +343,7 @@ textarea {
         "main-index main-index main-index main-index"
         "awards restaurant-photos testimonials coming-soon";
     grid-gap: 5px;
-    background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
+    background-image: url("../images/index-background-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -415,7 +415,7 @@ textarea {
             "coming-soon";
 
         grid-gap: 5px;
-        background-image: url("../images/pexels-karolina-grabowska-4199098.jpg");
+        background-image: url("../images/index-background-image.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -456,28 +456,28 @@ textarea {
 
 @keyframes slide-restaurant-photos {
     25% {
-        background: url("../images/restaurant1.jpg");
+        background: url("../images/index-restaurant-photo-1.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     50% {
-        background: url("../images/restaurant2.jpg");
+        background: url("../images/index-restaurant-photo-2.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     75% {
-        background: url("../images/restaurant3.jpg");
+        background: url("../images/index-restaurant-photo-3.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     100% {
-        background: url("../images/restaurant4.jpg");
+        background: url("../images/index-restaurant-photo-4.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -495,28 +495,28 @@ textarea {
 
 @keyframes slide-awards-photos {
     25% {
-        background: url("../images/award1.webp");
+        background: url("../images/index-award-1.webp");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     50% {
-        background: url("../images/award2.jpeg");
+        background: url("../images/index-award-2.jpeg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     75% {
-        background: url("../images/award3.webp");
+        background: url("../images/index-award-3.webp");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     100% {
-        background: url("../images/award4.jpg");
+        background: url("../images/index-award-4.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -533,28 +533,28 @@ textarea {
 
 @keyframes slide-testimonials-photos {
     25% {
-        background: url("../images/Testimonial-1.png");
+        background: url("../images/index-testimonial-1.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     50% {
-        background: url("../images/Testimonial-2.png");
+        background: url("../images/index-testimonial-2.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     75% {
-        background: url("../images/Testimonial-3.png");
+        background: url("../images/index-testimonial-3.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     100% {
-        background: url("../images/Testimonial-4.png");
+        background: url("../images/index-testimonial-4.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -571,7 +571,7 @@ textarea {
 
 @keyframes slide-coming-soon-photos {
     25% {
-        background: url("../images/coming-soon-1.jpg");
+        background: url("../images/index-coming-soon-1.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -585,14 +585,14 @@ textarea {
     }
 
     75% {
-        background: url("../images/coming-soon-3.jpg");
+        background: url("../images/index-coming-soon-3.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     100% {
-        background: url("../images/coming-soon-4.jpg");
+        background: url("../images/index-coming-soon-4.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
