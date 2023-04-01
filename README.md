@@ -137,9 +137,47 @@ The list of features that have been implemented and the list of features that ar
 
 - Clicable, fixed size logo that brings the users back to home page.
 - Implemented on all three pages.
+
 ![Logo](assets/images/logo.jpg)
 
 #### Navigation
 - Laid out at known, top section of webpage. Included in semantic header section for accessibility.
 - Implemented on all three pages.
-- Fully responsive to small screen size (tested upto 320 px width)
+- Fully responsive to small screen size
+
+![Nav bar laptop](docs/nav-bar-laptop-view.png)
+
+![Nav bar mobile](docs/nav-bar-mobile-view.png)
+
+#### Menu
+- Laid out with alternative image on left and right. The grid has a fixed width layout to avoid blowing out proportion when viewed on large screen.
+- Fully responsive. The menu changes to single column layout when viewed on small screen
+
+![Menu laptop](docs/menu-laptop-view.png)
+
+![Menu mobile](docs/menu-mobile-view.png)
+
+#### Slide show
+- 4 slide show on each of the subfeatures
+- Fully responsive. Changes to single column layout on a small screen
+
+![Slideshow laptop](docs/slide-show-laptop.png)
+![Slideshow mobile](docs/slide-show-mobile.png)
+
+#### Contact us
+- Laid out with form validation. The user must enter the phone name, email and phone number with an alternate to write additional text.
+- User interaction and feedback provided
+
+The following gif highlights the interaction
+
+![Contact us](docs/contact-us.gif)
+
+#### Footer
+- Laid out at bottom. Fully responsive and available on all pages
+- Includes interactive link to social media that opens in new tab and opening hours
+
+
+### Features - to be implemented in next sprint
+- additional option in contact us form to provide option to choose between inquiry, table reservation and feedback
+- additoinal option on home page with a pop up to show that restaurant will be closed on certain days
+- Make the "Coming soon - takeaway" section on home page bit more obvious
