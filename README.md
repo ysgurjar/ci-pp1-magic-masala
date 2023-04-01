@@ -1,7 +1,7 @@
 # Masala magic
 (Developer: Yash Gurjar)
 
-![Mockup image](docs/am-i-responsive.jpg)
+![Mockup image](docs/am-i-responsive.png)
 
 [Live webpage](https://ysgurjar.github.io/ci-pp1-magic-masala/index.html)
 
@@ -36,3 +36,5 @@
 9. [Deployment](#deployment)
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
+
+<hr>
