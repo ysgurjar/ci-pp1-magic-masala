@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*tell broswer to account for any border and padding in specified element's width */
+    /*instructing broswer to account for any border and padding in specified element's width */
 }
 
 header {
@@ -36,7 +36,6 @@ h5,
 h6 {
     font-family: 'Libre Baskerville', serif;
 }
-
 
 /* ============================================================================
     HEADER ELEMENT STYLE
@@ -101,11 +100,9 @@ nav #menu {
 
 @media all and (max-width:320px) {
     /* testing for practically smallest screen iphone 5s */
-
     .header-outer {
         flex-direction: column;
     }
-
     #logo {
         margin: auto;
         /* centers the div containg logo */
@@ -160,7 +157,6 @@ body {
 .right {
     padding: 20px 40px;
     background-color: beige;
-
 }
 
 h2 {
@@ -284,7 +280,6 @@ textarea {
     /*responsive text design */
 
     padding: 10px;
-
     background-color: white;
 
 }
@@ -421,10 +416,7 @@ textarea {
 
         text-align: center;
         margin: auto;
-
-
     }
-
     .what-we-do {
         align-self: center;
     }
@@ -441,7 +433,6 @@ textarea {
     min-height: 500px;
     width: 100%;
     background-color: beige;
-
     justify-content: center;
 }
 
@@ -486,9 +477,7 @@ textarea {
 /*--Animation for award photos --*/
 
 .slider-awards {
-
     animation: slide-awards-photos 20s infinite;
-
 }
 
 @keyframes slide-awards-photos {
@@ -562,9 +551,7 @@ textarea {
 /*--Animation for coming soon --*/
 
 .slider-coming-soon {
-
     animation: slide-coming-soon-photos 20s infinite;
-
 }
 
 @keyframes slide-coming-soon-photos {
@@ -705,7 +692,6 @@ textarea {
 .food-description-4,
 .food-description-6 {
     /*selects menu description on the right i.e. 2,4, 6*/
-
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -731,7 +717,6 @@ textarea {
 @media screen and (max-width:1000px) {
 
     .grid-container {
-
         width: 95vw;
         /*total width of the grid */
         grid-template-columns: minmax(0, 1fr);
