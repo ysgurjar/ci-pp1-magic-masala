@@ -102,8 +102,44 @@ For the colour saffron, white and black colors have been chosen to keep the them
 - **Hind Guntur** - sans serif typeface is used for paragraph and other body text. Together they create a good contrast of fonts as user navigates through website.
 
 ### Structure
--The homepage is laid out in a known fashon. A top nav bar with some introduction text.
--Includes a clicable logo which brings user back to home page.
+- The homepage is laid out in a known fashon. A top nav bar with some introduction text.
+- Includes a clicable logo which brings user back to home page.
 - A homepage with about us, awards, coming soon, reviews and restaurant photos
 - A menu page
 - Contact us section with location displayed on google maps
+
+### Wireframes
+The wireframes have been drawn and redrawn on physical notebook. For the sanctity of the document, they have not been included. Most of the wireframe designs were implemented and some were kept for the next release.
+
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+
+### Frameworks & Tools
+- Git
+- Gitpod
+- Github
+- Canva
+- Font awesome
+- Google fonts
+- Tinypng
+- Color palatte generator
+
+## Features
+
+The list of features that have been implemented and the list of features that are to be implemented in next sprint can be found below.
+
+### Features - implemented
+
+#### Logo
+
+- Clicable, fixed size logo that brings the users back to home page.
+- Implemented on all three pages.
+![Logo](assets/images/logo.jpg)
+
+#### Navigation
+- Laid out at known, top section of webpage. Included in semantic header section for accessibility.
+- Implemented on all three pages.
+- Fully responsive to small screen size (tested upto 320 px width)
