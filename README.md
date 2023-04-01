@@ -83,3 +83,27 @@
 - As the site owner, I want customers to know the type of food being served
 - As the site owner, I want to publish recent awards won by restaurant
 - As the site owner, I want to show that we are always introducing new food to keep things interesting
+
+## Design
+
+### Design Choices
+The webpage was designed with white, brass and black material to give customer the feeling of luxury. The while marbel background with a spoon mix of spices represents the the theme as well.
+The web content is kept minimalist to match with scandinavian minimalism
+
+### Colour
+For the colour saffron, white and black colors have been chosen to keep the them minimalist and luxurious. Safroon matches color of mango which is very famour indian fruit and and represents an expensive spcice as well. Beige color - a variation of white is also introduced to keep some contrast between white header and footer and body elements. These colors are further combined to provide enough contrast as well.
+<br>
+
+![Colour scheme](docs/color-palatte.png)
+
+
+### Fonts
+- **Libre Baskerville** - serif typeface has been used for headings to highlight them. 
+- **Hind Guntur** - sans serif typeface is used for paragraph and other body text. Together they create a good contrast of fonts as user navigates through website.
+
+### Structure
+-The homepage is laid out in a known fashon. A top nav bar with some introduction text.
+-Includes a clicable logo which brings user back to home page.
+- A homepage with about us, awards, coming soon, reviews and restaurant photos
+- A menu page
+- Contact us section with location displayed on google maps
