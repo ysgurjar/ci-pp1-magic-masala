@@ -231,4 +231,4 @@ You can clone the repository by following these steps:
 
 A few images were renamed and reference document was accidently deleted. However, I have tried my best to give credits to those who contributed.
 
-- Sincere thank you to my mentor (Slack Mo_Shami) for words of assurance and pushing me try my best descpite unfavorable circumstances.
+- Sincere thank you to my mentor (Slack Mo_mentor) for words of assurance and pushing me try my best descpite unfavorable circumstances.
