@@ -58,3 +58,28 @@
 - People looking to organise events at the resturant
 - Tie up with event organisers for catering
 
+### User Requrements and Expectations
+
+- Simple to navigate
+- Easy to view menu both on phone and computer
+- Able to contact restaurant via phone or email
+- Able to reach restaurant in opening hours
+
+
+### User Stories
+
+#### First-time User 
+- As a first time user, I want to know the cuisine and theme of restaurant
+- As a first time user, I want to know if it is dine in or take away or both
+- As a first time user, I want to know the reviews from others
+- As a first time user, I want to know the credibility of the restaurant and if it is famous
+
+#### Returning User
+- As a returning user, I want to see the regular menu
+- As a returnign user, I want to see what's coming soon
+- As a returning user, I want to be able to give feedback or reach out for organising a small event.
+
+#### Site Owner 
+- As the site owner, I want users to find news about upcoming events or changes in opening times
+- As the site owner, I want users to get to know the restaurant 
+- As the site owner, I want the users to be able to contact us
