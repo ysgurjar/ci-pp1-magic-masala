@@ -47,9 +47,9 @@
 - Location and contact details of restaurant.
 
 ### Site Owner Goals
-- Market the restaurant food among local and tourists.
+- Market the restaurant business food among local and tourists.
 - Provide contact information to customers and opening hours 
-- Provide a means to customers to contact them.
+- Provide a means to customers to contact the restaurant
 
 ## User Experience
 
@@ -80,6 +80,6 @@
 - As a returning user, I want to be able to give feedback or reach out for organising a small event.
 
 #### Site Owner 
-- As the site owner, I want users to find news about upcoming events or changes in opening times
-- As the site owner, I want users to get to know the restaurant 
-- As the site owner, I want the users to be able to contact us
+- As the site owner, I want customers to know the type of food being served
+- As the site owner, I want to publish recent awards won by restaurant
+- As the site owner, I want to show that we are always introducing new food to keep things interesting
