@@ -28,7 +28,7 @@
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+
 
 <hr>
 
@@ -101,7 +101,7 @@ For the colour saffron, white and black colors have been chosen to keep the them
 - A menu page
 - Contact us section with location displayed on google maps
 
-### Wireframes
+## Wireframes
 The wireframes have been drawn and redrawn on physical notebook. For the sanctity of the document, they have not been included. Most of the wireframe designs were implemented and some were kept for the next release.
 
 ## Technologies Used
@@ -192,6 +192,43 @@ The website is found responsive upto 320 px width (similar to iphone-5) and no b
 
 ## Bugs
 
+All the bugs have been fixed except one. The anchor tag around logo sometimes takes whitespace when viewed on potrait mode on tablets.
+
 ## Deployment
 
-## Credit
+The webiste was deployed using github page.
+
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://4n4ru.github.io/CI_MS1_BodelschwingherHof/"
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
+
+## Credits
+
+- The images were taken from pexels were clicked by the following photgraphers.
+1. Dana Tentis
+2. Jessica Lewis Creative
+3. Karolina Grabowska
+4. Marvin Ozz
+5. Dapur Melodi
+6. Dino Uniyal
+7. Malidate Van
+8. Shahbaz Ansari.
+
+A few images were renamed and reference document was accidently deleted. However, I have tried my best to give credits to those who contributed.
+
+- Sincere thank you to my mentor (Slack Mo_Shami) for words of assurance and pushing me try my best descpite unfavorable circumstances.
