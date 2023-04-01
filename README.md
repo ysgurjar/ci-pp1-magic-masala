@@ -1,4 +1,4 @@
-# Masala magic
+# Magic Masala
 (Developer: Yash Gurjar)
 
 ![Mockup image](docs/am-i-responsive.png)
