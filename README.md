@@ -21,14 +21,11 @@
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
-    1. [Languages](#languages)
-    2. [Frameworks and Tools](#frameworks-&-tools)
 5. [Features](#features)
 6. [Testing](#validation)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
-
 
 <hr>
 
@@ -61,21 +58,22 @@
 
 ### User Stories
 
-#### First-time User 
-- As a first time user, I want to know the cuisine and theme of restaurant
-- As a first time user, I want to know if it is dine in or take away or both
-- As a first time user, I want to know the reviews from others
-- As a first time user, I want to know the credibility of the restaurant and if it is famous
+#### A.First-time User 
+1. As a first time user, I want to know the cuisine and theme of restaurant
+2. As a first time user, I want to know if it is dine in or take away or both
+3. As a first time user, I want to know the reviews from others
+4. As a first time user, I want to know the credibility of the restaurant and if it is famous
+5. As a first time user, I want to know where is it located
 
-#### Returning User
-- As a returning user, I want to see the regular menu
-- As a returnign user, I want to see what's coming soon
-- As a returning user, I want to be able to give feedback or reach out for organising a small event.
+#### B. Returning User
+1. As a returning user, I want to see the regular menu
+2. As a returnign user, I want to see what's coming soon
+3. As a returning user, I want to be able to give feedback or reach out for organising a small event.
 
-#### Site Owner 
-- As the site owner, I want customers to know the type of food being served
-- As the site owner, I want to publish recent awards won by restaurant
-- As the site owner, I want to show that we are always introducing new food to keep things interesting
+#### C .Site Owner 
+1. As the site owner, I want customers to know the type of food being served
+2. As the site owner, I want to publish recent awards won by restaurant
+3. As the site owner, I want to show that we are always introducing new food to keep things interesting
 
 ## Design
 
@@ -128,13 +126,13 @@ The list of features that have been implemented and the list of features that ar
 
 #### Logo
 
-- Clicable, fixed size logo that brings the users back to home page.
+- Clicable, fixed size logo that brings the users back to home page. **User story covered: A1, B1**
 - Implemented on all three pages.
 
 ![Logo](assets/images/logo.jpg)
 
 #### Navigation
-- Laid out at known, top section of webpage. Included in semantic header section for accessibility.
+- Laid out at known, top section of webpage. Included in semantic header section for accessibility. 
 - Implemented on all three pages.
 - Fully responsive to small screen size
 
@@ -145,6 +143,7 @@ The list of features that have been implemented and the list of features that ar
 #### Menu
 - Laid out with alternative image on left and right. The grid has a fixed width layout to avoid blowing out proportion when viewed on large screen.
 - Fully responsive. The menu changes to single column layout when viewed on small screen
+- User stories covered **A1, A2, A3, A4**
 
 ![Menu laptop](docs/menu-laptop-view.png)
 
@@ -153,6 +152,7 @@ The list of features that have been implemented and the list of features that ar
 #### Slide show
 - 4 slide show on each of the subfeatures
 - Fully responsive. Changes to single column layout on a small screen
+- **User stories covered A3, A4, B2, C2, C3**
 
 ![Slideshow laptop](docs/slide-show-laptop.png)
 ![Slideshow mobile](docs/slide-show-mobile.png)
@@ -160,6 +160,7 @@ The list of features that have been implemented and the list of features that ar
 #### Contact us
 - Laid out with form validation. The user must enter the phone name, email and phone number with an alternate to write additional text.
 - User interaction and feedback provided
+- **User stories covered B3,A5**
 
 The following gif highlights the interaction
 
