@@ -25,13 +25,6 @@
     2. [Frameworks & Tools](#frameworks-&-tools)
 5. [Features](#features)
 6. [Testing](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -176,8 +169,29 @@ The following gif highlights the interaction
 - Laid out at bottom. Fully responsive and available on all pages
 - Includes interactive link to social media that opens in new tab and opening hours
 
-
 ### Features - to be implemented in next sprint
 - additional option in contact us form to provide option to choose between inquiry, table reservation and feedback
 - additoinal option on home page with a pop up to show that restaurant will be closed on certain days
 - Make the "Coming soon - takeaway" section on home page bit more obvious
+
+## Testing
+
+All HTML and css files were ran through jigsaw validator. 
+- No errors found
+- one warning found - the warning was about possible misuse of aria label. The aria label is applied to the price of the menu item. As the site developer the label has been left as it is to provide users with visual impairments extra confidence that they are looking at the "price". The price is in local currency of danish kroner, which may not be known to every one and therefore for accessibility reason it has been left as it is.
+
+### Performance 
+
+It has been tested with lighthouse. The webiste scores high on accessibility.
+
+![performance](docs/performance.png)
+
+### Device and browser dependency
+
+The website is found responsive upto 320 px width (similar to iphone-5) and no broswer related issued were found on mozilla and firefox.
+
+## Bugs
+
+## Deployment
+
+## Credit
