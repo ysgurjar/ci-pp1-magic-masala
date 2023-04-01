@@ -259,9 +259,7 @@ textarea {
 
 .googlemap {
     position: relative;
-    padding-bottom: 75%;
-    /* 4:3 ratio*/
-    height: 0;
+    height: 30vh;
     overflow: hidden;
 }
 
@@ -270,7 +268,7 @@ textarea {
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
+    height: 30vh !important;
 }
 
 /* ============================================================================
