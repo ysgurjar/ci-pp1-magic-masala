@@ -22,7 +22,7 @@
     5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
-    2. [Frameworks & Tools](#frameworks-&-tools)
+    2. [Frameworks and Tools](#frameworks-&-tools)
 5. [Features](#features)
 6. [Testing](#validation)
 8. [Bugs](#Bugs)
@@ -110,7 +110,7 @@ The wireframes have been drawn and redrawn on physical notebook. For the sanctit
 - HTML
 - CSS
 
-### Frameworks & Tools
+### Frameworks and Tools
 - Git
 - Gitpod
 - Github
